@@ -12,7 +12,7 @@
             max-width:800px;
             margin: 0 auto;
             padding:16px;
-            border: 5px solid rgb(153, 134, 219)
+            border: 5px solid rgb(153, 134, 219);
         }
         main{
             background-color: white;
@@ -25,7 +25,9 @@
         img{
             width:140px;
             height:140px;
-            display:flex;
+        }
+        .artigo-autor{
+            font-weight: bold;
         }
     </style>
 </head>
@@ -38,9 +40,25 @@
         <img src="cd1.jpg">
         <div>
             <h2>Meu primeiro post</h2>
-            <p>Por: Roberto</p>
+            <p class="artigo-autor">Por: Roberto</p>
             <p>Boas-vindas ao meu primeiro Blog!</p>
+            <button>.<span>0</span></button>
+            <button>.<span>0</span></button>
         </div>
     </main>
 </body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            console.log("fui clicado");
+            let texto= botao.querySelector("span");
+            texto.textContent++;
+        }
+
+    }
+)
+</script>
 </html>
