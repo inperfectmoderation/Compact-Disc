@@ -11,12 +11,22 @@ header{
 main{
     background-color: white;
     color: black;
-    max-width:800px;
     margin: 0 auto;
     padding:16px;
+
+    display: flex;
 }
+
 article{
     display:flex;
+    border: 1px solid blue;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    flex: 1 1 25%;
+
+    flex=direction:
 }
 
 img{
