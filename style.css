@@ -26,7 +26,9 @@ article{
 
     flex: 1 1 25%;
 
-    flex=direction:
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 img{
